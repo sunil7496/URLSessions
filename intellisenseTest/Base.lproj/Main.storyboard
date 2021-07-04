@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -104,6 +104,12 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="RXo-80-5bd"/>
                                         </connections>
                                     </collectionView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hND-5T-JCR">
+                                        <rect key="frame" x="0.0" y="310" width="414" height="508"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -116,10 +122,14 @@
                                     <constraint firstItem="00Y-oV-cJD" firstAttribute="leading" secondItem="EJi-Vy-wTb" secondAttribute="leading" constant="10" id="Gkc-e0-94a"/>
                                     <constraint firstAttribute="trailing" secondItem="00Y-oV-cJD" secondAttribute="trailing" constant="10" id="I6F-fW-k0J"/>
                                     <constraint firstAttribute="bottom" secondItem="pMl-vR-6iV" secondAttribute="bottom" id="L3X-pa-YJh"/>
+                                    <constraint firstItem="hND-5T-JCR" firstAttribute="top" secondItem="00Y-oV-cJD" secondAttribute="bottom" id="Ox2-e3-MKY"/>
+                                    <constraint firstItem="hND-5T-JCR" firstAttribute="leading" secondItem="EJi-Vy-wTb" secondAttribute="leading" id="WrY-oQ-RSm"/>
+                                    <constraint firstAttribute="trailing" secondItem="hND-5T-JCR" secondAttribute="trailing" id="aEq-OY-dob"/>
                                     <constraint firstItem="00Y-oV-cJD" firstAttribute="top" secondItem="6vM-Hk-Bb2" secondAttribute="bottom" constant="5" id="oMk-yc-6jP"/>
                                     <constraint firstAttribute="trailing" secondItem="pMl-vR-6iV" secondAttribute="trailing" constant="10" id="oeB-Oh-k22"/>
                                     <constraint firstItem="6vM-Hk-Bb2" firstAttribute="top" secondItem="Q0L-Vm-r7s" secondAttribute="bottom" constant="5" id="sKf-hs-V9R"/>
                                     <constraint firstItem="Q0L-Vm-r7s" firstAttribute="top" secondItem="EJi-Vy-wTb" secondAttribute="top" id="wi9-dS-7wn"/>
+                                    <constraint firstAttribute="bottom" secondItem="hND-5T-JCR" secondAttribute="bottom" id="yNT-2j-dWO"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -136,18 +146,22 @@
                         <outlet property="categoryColectionView" destination="6vM-Hk-Bb2" id="bCe-ts-0si"/>
                         <outlet property="detailsCategoryCollectionView" destination="pMl-vR-6iV" id="vNc-6u-3my"/>
                         <outlet property="headerImgView" destination="Q0L-Vm-r7s" id="hfE-AJ-DXA"/>
+                        <outlet property="noRecord" destination="hND-5T-JCR" id="Lcg-HW-TCk"/>
                         <outlet property="subcategoryCollectionView" destination="00Y-oV-cJD" id="Nxn-1Y-Ptg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="88"/>
+            <point key="canvasLocation" x="140.57971014492756" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>
         <image name="sun.min.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

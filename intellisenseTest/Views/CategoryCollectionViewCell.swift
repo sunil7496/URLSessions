@@ -2,7 +2,7 @@
 //  CategoryCollectionViewCell.swift
 //  intellisenseTest
 //
-//  Created by TrivialWorks on 03/07/21.
+//  Created by UttamTech on 03/07/21.
 //
 
 import UIKit
